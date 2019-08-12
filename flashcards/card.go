@@ -1,4 +1,4 @@
-package card
+package flashcards
 
 // Card represents a single flashcard. A card has two sides, front and back.
 // A card may be reversible. If a card is reversible, either side may be shown
@@ -10,8 +10,8 @@ type Card struct {
 	Reversible bool
 }
 
-// New returns a new card.
-func New(f, b string, r bool) *Card {
+// NewCard returns a new card.
+func NewCard(f, b string, r bool) *Card {
 	return &Card{
 		Front:      f,
 		Back:       b,
