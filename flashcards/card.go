@@ -5,9 +5,9 @@ package flashcards
 // as the prompt. Otherwise, the front side is the prompt, and the back is the
 // solution.
 type Card struct {
-	Front      string
-	Back       string
-	Reversible bool
+	Front      string `json:"front"`
+	Back       string `json:"back"`
+	Reversible bool   `json:"reversible"`
 }
 
 // NewCard returns a new card.
